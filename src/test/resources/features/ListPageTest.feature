@@ -1,0 +1,11 @@
+Feature: I can find a city inside a state
+@List
+Scenario Outline: Scenario Outline name:  As a test Engineer, I want to validate the a text is present inside the list
+    Given I navigate to the list page
+    When I search <state> in the list
+    Then I can find <city> in the list
+
+    Examples: 
+    |state|city|
+    |Washington|Seattle, Washington|
+    |Chicago|Chicago, Illinois|
